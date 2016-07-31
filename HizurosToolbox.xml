@@ -1,0 +1,16 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Include file="shared.xml"/>
+	<Include file="localizations\load.xml"/>
+	<Script file="options.lua"/>
+	<Include file="modules.xml"/>
+	<Script  file="HizurosToolbox.lua"/>
+
+	<Frame name="HizurosToolbox" parent="UIParent" hidden="true">
+		<Scripts>
+			<OnEvent function="HizurosToolbox_OnEvent"/>
+			<OnLoad function="HizurosToolbox_OnLoad"/>
+		</Scripts>
+	</Frame>
+</Ui>
