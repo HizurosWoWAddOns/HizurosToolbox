@@ -44,12 +44,13 @@ function HizurosToolbox_OnEvent(self,event,arg1,...)
 		HizurosToolbox_CharacterDB[ns.player.name_realm].basics = ns.player;
 
 		-- data cache
-		if Broker_Everything_DataDB==nil then
-			Broker_Everything_DataDB = {realms={}};
+		if HizurosToolbox_DataDB==nil then
+			HizurosToolbox_DataDB = {realms={}};
 		end
-		if Broker_Everything_DataDB.realms==nil then
-			Broker_Everything_DataDB.realms={};
+		if HizurosToolbox_DataDB.realms==nil then
+			HizurosToolbox_DataDB.realms={}; -- ?
 		end
+		ns.data = HizurosToolbox_DataDB;
 
 		-- enable registered modules
 		ns.RegisterModules();

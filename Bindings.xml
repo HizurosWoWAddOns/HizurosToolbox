@@ -1,0 +1,12 @@
+<Bindings>
+	<Binding name="HTBSCREENSHOT" header="HIZUROSTOOLBOX" category="ADDONS">
+		if(HTB_Screenshot)then
+			HTB_Screenshot();
+		end
+	</Binding>
+	<Binding name="HTBFRAMESTACK" category="ADDONS">
+		if(HTB_FrameStack)then
+			HTB_FrameStack("key");
+		end
+	</Binding>
+</Bindings>

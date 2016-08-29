@@ -4,16 +4,12 @@
 	<Script file="modules.lua"/>
 
 	<Script file="modules\Bags_and_Banks.lua"/>
-	<Script file="modules\QuestTracker.lua"/>
+	<Script file="modules\Development.lua"/>
+	<Script file="modules\Guild.lua"/>
+	<Script file="modules\keystrokeReplace.lua"/>
+	<Script file="modules\Quests.lua"/>
+	<Script file="modules\Screenshot.lua"/>
 	<Script file="modules\UndressButton.lua"/>
 	<Script file="modules\ZoneAbilityButton.lua"/>
-	
-	<Script file="modules\Development.lua"/>
-
-	<!-- Include file="modules\CompactRaidFrame.xml"/ -->
-	<!-- Include file="modules\GroupFinder.xml"/-->
-	<!-- Include file="modules\GuildBrowser.xml"/-->
-	<!-- Script file="modules\InterfaceOptionsPanel.lua"/ -->
-	<!-- Script file="modules\KeybindingProfiles.lua"/ -->
 
 </Ui>

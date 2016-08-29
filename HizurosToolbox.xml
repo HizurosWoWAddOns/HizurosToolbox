@@ -1,9 +1,10 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 
-	<Include file="shared.xml"/>
 	<Include file="localizations\load.xml"/>
+	<Include file="shared.xml"/>
 	<Script file="options.lua"/>
+	<Script file="credits.lua"/>
 	<Include file="modules.xml"/>
 	<Script  file="HizurosToolbox.lua"/>
 

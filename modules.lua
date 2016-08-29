@@ -7,7 +7,6 @@ ns.moduleNames = {};
 ns.modules = setmetatable({},{__newindex=function(t,k,v)
 	tinsert(ns.moduleNames,k);
 	rawset(t,k,v);
-	ns.debug("new module",k);
 end});
 
 function ns.RegisterModules()

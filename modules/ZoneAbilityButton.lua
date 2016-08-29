@@ -5,14 +5,19 @@ local updateButtons;
 local buttons = {};
 local module = {
 	label = "Zone Ability Button",
-	desc = L["Do you have a problem to find blizzards zone ability button on your action bars?"],
-	events = nil, --{},
+	desc = nil,
+	events = nil,
 	config = {},
 	options = {
+		desc = {
+			type = "description", order = 0,
+			name = L["Do you have a problem to find blizzards zone ability button on your action bars?"],
+			fontSize = "medium"
+		},
 		getFromActionBar = {
-			type = "execute",
-			name = L["Find and pull it"],
-			desc = L["Push this button and this script pull the button from your action bars to your mouse."],
+			type = "execute", order = 1, width = "full",
+			name = L["Click me!"],
+			desc = L["Push this button and this function search on your action bars placed zone ability spell and drag the first from the bar and put on mouse cursor. (multi exebutable)"],
 			func = function()
 				local _,SpellID;
 				local frame = DraenorZoneAbilityFrame or ZoneAbilityFrame; -- wod and legion frame name.
@@ -32,8 +37,3 @@ local module = {
 	}
 }
 ns.modules[modName] = module;
-
--- MakeMoreDraenorZoneAbilityButtons()
--- PickupSpellBookItem("")
--- http://eu.battle.net/wow/de/forum/topic/15161820849#5
-
